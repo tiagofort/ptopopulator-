@@ -3,10 +3,13 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime, timedelta
 import re
+import os
+import tempfile
+import json
 
 # --- Autenticação com Google Sheets ---
 SCOPE = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-CREDENTIALS_FILE = "credentials.json"
+CREDENTIALS_JSON_ENV = os.getenv("GOOGLE_CREDENTIALS_JSON") 
 SPREADSHEET_NAME = "pto"
 
 # --- Configurações da planilha ---
