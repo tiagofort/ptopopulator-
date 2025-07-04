@@ -37,9 +37,10 @@ The result? A clear, friendly visual representation of who is off and when — a
 
 The raw PTO data should look like this:
 
-HHoliday_4008478 07/07/2025 2:00 AM 08/07/2025 2:00 AM 1 day(s) 7.50
-HHoliday_4008478 21/07/2025 2:00 AM 22/07/2025 2:00 AM 1 day(s) 7.50
-H~Holiday_4008478 28/07/2025 2:00 AM 29/07/2025 2:00 AM 1 day(s) 7.50
+```
+H~Holiday_4008478 07/07/2025 2:00 AM 08/07/2025 2:00 AM 1 day(s) 7.50
+B~Bank Holiday_4008478 	08/15/2025 2:00 AM 	08/16/2025 2:00 AM 1 day(s) 7.50
+```
 
 ---
 
@@ -54,10 +55,11 @@ After conversion, paste the updated data into the **top text field**.
 
 The employee's name must appear as the **first line** of the data, like this:
 
+```
 Batman
-HHoliday_4008478 07/07/2025 2:00 AM 08/07/2025 2:00 AM 1 day(s) 7.50
-HHoliday_4008478 21/07/2025 2:00 AM 22/07/2025 2:00 AM 1 day(s) 7.50
-H~Holiday_4008478 28/07/2025 2:00 AM 29/07/2025 2:00 AM 1 day(s) 7.50
+H~Holiday_4008478 07/07/2025 2:00 AM 08/07/2025 2:00 AM 1 day(s) 7.50
+B~Bank Holiday_4008478 	08/15/2025 2:00 AM 	08/16/2025 2:00 AM 1 day(s) 7.50
+```
 
 ---
 
