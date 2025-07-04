@@ -4,7 +4,6 @@ from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime, timedelta
 import re
 import os
-import tempfile
 import json
 
 # --- Autenticação com Google Sheets ---
@@ -28,7 +27,11 @@ CODIGOS = {
 
 @st.cache_resource
 def conectar_planilha():
-    creds = ServiceAccountCredentials.from_json_keyfile_name(CREDENTIALS_FILE, SCOPE)
+    if not CREDENTIALS_JSON_ENV:
+        raise ValueError("⚠️ A variável de ambiente GOOGLE_CREDENTIALS_JSON não foi definida.")
+    
+    creds_dict = json.loads(CREDENTIALS_JSON_ENV)
+    creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, SCOPE)
     client = gspread.authorize(creds)
     sheet = client.open(SPREADSHEET_NAME).sheet1
     return sheet
@@ -121,7 +124,7 @@ if st.button("✍️ Fill in the spreadsheet"):
             st.success(resultado)
         except Exception as e:
             st.error(f"Error to fill or connect to the sheet: {e}")
-
+            
 
 st.markdown("---")
 st.header("🧾 Data conversor dd/mm/yyyy")
