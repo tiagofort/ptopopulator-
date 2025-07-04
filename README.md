@@ -57,8 +57,8 @@ The employee's name must appear as the **first line** of the data, like this:
 
 ```
 Batman
-H~Holiday_4008478 07/07/2025 2:00 AM 08/07/2025 2:00 AM 1 day(s) 7.50
-B~Bank Holiday_4008478 	08/15/2025 2:00 AM 	08/16/2025 2:00 AM 1 day(s) 7.50
+H~Holiday_4008478 07/07/2025 2:00 AM 07/08/2025 2:00 AM 1 day(s) 7.50
+B~Bank Holiday_4008478 	15/08/2025 2:00 AM 	16/08/2025 2:00 AM 1 day(s) 7.50
 ```
 
 ---
