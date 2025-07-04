@@ -11,7 +11,7 @@ import streamlit as st
 def conectar_planilha():
     cred_json = os.getenv("GOOGLE_CREDENTIALS_JSON")
     if not cred_json:
-        raise ValueError("⚠️ GOOGLE_CREDENTIALS_JSON não definida.")
+        raise ValueError("⚠️ GOOGLE_CREDENTIALS_JSON not defined.")
     
     creds_dict = json.loads(cred_json)
     creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, SCOPE)
