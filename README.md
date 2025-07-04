@@ -37,17 +37,9 @@ The result? A clear, friendly visual representation of who is off and when — a
 
 The raw PTO data should look like this:
 
-H~Holiday_4008478     07/07/2025 2:00 AM     07/08/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     07/21/2025 2:00 AM     07/22/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     07/28/2025 2:00 AM     07/29/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     08/08/2025 2:00 AM     08/09/2025 2:00 AM     1 day(s)     7.50
-B~Bank Holiday_4008478 08/15/2025 2:00 AM    08/16/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     08/22/2025 2:00 AM     08/23/2025 2:00 AM     1 day(s)     7.50
-B~Bank Holiday_4008478 09/05/2025 2:00 AM    09/06/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     09/12/2025 2:00 AM     09/13/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     09/19/2025 2:00 AM     09/20/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     09/26/2025 2:00 AM     09/27/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     10/03/2025 2:00 AM     10/04/2025 2:00 AM     1 day(s)     7.50
+HHoliday_4008478 07/07/2025 2:00 AM 08/07/2025 2:00 AM 1 day(s) 7.50
+HHoliday_4008478 21/07/2025 2:00 AM 22/07/2025 2:00 AM 1 day(s) 7.50
+H~Holiday_4008478 28/07/2025 2:00 AM 29/07/2025 2:00 AM 1 day(s) 7.50
 
 ---
 
@@ -62,18 +54,10 @@ After conversion, paste the updated data into the **top text field**.
 
 The employee's name must appear as the **first line** of the data, like this:
 
-**Batman**
-H~Holiday_4008478     07/07/2025 2:00 AM     08/07/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     21/07/2025 2:00 AM     22/07/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     28/07/2025 2:00 AM     29/07/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     08/08/2025 2:00 AM     09/08/2025 2:00 AM     1 day(s)     7.50
-B~Bank Holiday_4008478 15/08/2025 2:00 AM    16/08/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     22/08/2025 2:00 AM     23/08/2025 2:00 AM     1 day(s)     7.50
-B~Bank Holiday_4008478 05/09/2025 2:00 AM    06/09/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     12/09/2025 2:00 AM     13/09/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     19/09/2025 2:00 AM     20/09/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     26/09/2025 2:00 AM     27/09/2025 2:00 AM     1 day(s)     7.50
-H~Holiday_4008478     03/10/2025 2:00 AM     04/10/2025 2:00 AM     1 day(s)     7.50
+Batman
+HHoliday_4008478 07/07/2025 2:00 AM 08/07/2025 2:00 AM 1 day(s) 7.50
+HHoliday_4008478 21/07/2025 2:00 AM 22/07/2025 2:00 AM 1 day(s) 7.50
+H~Holiday_4008478 28/07/2025 2:00 AM 29/07/2025 2:00 AM 1 day(s) 7.50
 
 ---
 
@@ -83,8 +67,6 @@ After submitting, a message will confirm how many cells were added to the tracke
 You can verify the updated entries directly using the link provided in the [Live App](#-live-app) section.
 
 ---
-
-
 
 
 ## 🌐 Live App
