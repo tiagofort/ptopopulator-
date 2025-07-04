@@ -7,9 +7,9 @@ Unfortunately, the internal PTO management system does **not** provide a friendl
 ## 💡 The Problem
 
 Transferring PTO data from the internal system to these trackers is:
-- Manual
-- Time-consuming
-- Error-prone
+- Manual  
+- Time-consuming  
+- Error-prone  
 
 Each day off must be manually marked with a type:
 - `H` → Holiday  
@@ -31,15 +31,23 @@ The result? A clear, friendly visual representation of who is off and when — a
 
 ---
 
+## 🌐 Live App
+
+👉 **Try it here:** [https://ptopopulator.onrender.com/](https://ptopopulator.onrender.com/)
+
+📄 **View the tracker sheet:** [Google Sheets PTO Tracker](https://docs.google.com/spreadsheets/d/1-UzTANaw0_997fuIi2BBjw7vS5vMCJ17iSB1fZJXaFs/edit?gid=0#gid=0)
+
+---
+
 ## ⚙️ Technologies Used
 
 ### 🐍 Why Python?
 
 Python was chosen for its:
-- Simplicity and readability
-- Rich ecosystem of libraries
-- Fast prototyping capabilities
-- Native compatibility with Streamlit and Google APIs
+- Simplicity and readability  
+- Rich ecosystem of libraries  
+- Fast prototyping capabilities  
+- Native compatibility with Streamlit and Google APIs  
 
 ### 🔧 Libraries
 
@@ -57,5 +65,5 @@ Python was chosen for its:
 
 1. Clone the repository:
 ```bash
-git https://github.com/tiagofort/ptopopulator-.git
-cd ptopopulator
+git clone https://github.com/your-username/pto-populator.git
+cd pto-populator
