@@ -9,7 +9,7 @@ from .parser import parse_data
 def preencher_planilha(dados_colados, sheet):
     linhas = dados_colados.strip().split("\n")
     if not linhas:
-        return "⚠️ Dados vazios."
+        return "⚠️ Empty Data."
 
     nome = linhas[0].strip()
     dados = linhas[1:]
@@ -18,7 +18,7 @@ def preencher_planilha(dados_colados, sheet):
     try:
         idx_nome = nomes.index(nome) + LINHA_NOMES
     except ValueError:
-        return f"❌ '{nome}' não encontrado na planilha."
+        return f"❌ '{nome}' not found on spreadsheet"
 
     header = sheet.row_values(LINHA_DATAS)
     col_date_map = {}
@@ -65,4 +65,4 @@ def preencher_planilha(dados_colados, sheet):
             "values": u["values"]
         } for u in updates])
 
-    return f"✅ {len(updates)} células preenchidas para {nome}."
+    return f"✅ {len(updates)} filled cells for {nome}."
