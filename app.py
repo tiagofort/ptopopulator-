@@ -35,6 +35,6 @@ if st.button("🔁 Convert to dd/mm/yyyy"):
             lambda m: f"{m.group(3).zfill(2)}/{m.group(2).zfill(2)}/{m.group(4)}",
             texto_original
         )
-        st.text_area("Result:", value=texto_convertido, height=200, key="result", disabled=True)
+        st.text_area("Result:", value=texto_convertido, height=200, key="result")
     else:
         st.warning("Paste dates before convert.")
