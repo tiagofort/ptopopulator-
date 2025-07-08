@@ -4,6 +4,12 @@
 
 Unfortunately, the internal PTO management system does **not** provide a friendly or readable calendar view. As a workaround, each Team Leader maintains their own tracker spreadsheet to visualize absences more clearly.
 
+## 📱 Fully Responsive Design
+
+The UI adapts beautifully across all screen sizes — from mobile to tablet and desktop — ensuring a seamless shopping experience for users on any device.
+
+![Responsive Test](https://imagens-tiago.s3.eu-north-1.amazonaws.com/resposive-pto.png)
+
 ## 💡 The Problem
 
 Transferring PTO data from the internal system to these trackers is:
@@ -38,8 +44,8 @@ The result? A clear, friendly visual representation of who is off and when — a
 The raw PTO data should look like this:
 
 ```
-H~Holiday_4008478 07/07/2025 2:00 AM 08/07/2025 2:00 AM 1 day(s) 7.50
-B~Bank Holiday_4008478 	08/15/2025 2:00 AM 	08/16/2025 2:00 AM 1 day(s) 7.50
+H~Holiday_4008478 01/01/2025 2:00 AM 01/05/2025 2:00 AM 1 day(s) 7.50
+B~Bank Holiday_4008478 	01/10/2025 2:00 AM 	01/11/2025 2:00 AM 1 day(s) 7.50
 ```
 
 ---
@@ -57,8 +63,8 @@ The employee's name must appear as the **first line** of the data, like this:
 
 ```
 Batman
-H~Holiday_4008478 07/07/2025 2:00 AM 07/08/2025 2:00 AM 1 day(s) 7.50
-B~Bank Holiday_4008478 	15/08/2025 2:00 AM 	16/08/2025 2:00 AM 1 day(s) 7.50
+H~Holiday_4008478  01/01/2025 2:00 AM  05/01/2025 2:00 AM 1 day(s) 7.50
+B~Bank Holiday_4008478 	10/01/2025 2:00 AM 	11/01/2025 2:00 AM 1 day(s) 7.50
 ```
 
 ---

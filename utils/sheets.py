@@ -1,5 +1,3 @@
-# utils/sheets.py
-
 from datetime import datetime, timedelta
 import re
 import gspread
@@ -31,19 +29,22 @@ def preencher_planilha(dados_colados, sheet):
     updates = []
 
     for linha in dados:
-        linha_limpa = re.sub(r'\s{2,}|\t+', '\t', linha.strip())
-        partes = linha_limpa.split("\t")
-
-        if len(partes) < 3:
+        match = re.match(
+            r'^([A-Z]{1,6}~[^\t\s]+)[\s\t]+(\d{2}/\d{2}/\d{4} \d{1,2}:\d{2} [AP]M)[\s\t]+(\d{2}/\d{2}/\d{4} \d{1,2}:\d{2} [AP]M)',
+            linha.strip()
+        )
+        if not match:
             continue
 
-        tipo = partes[0].split("~")[0].strip()
+        tipo_raw, data_ini_str, data_fim_str = match.groups()
+        tipo = tipo_raw.split("~")[0].strip()
+
         if tipo not in CODIGOS:
             continue
 
         try:
-            dt_ini = datetime.strptime(partes[1].strip().split()[0], "%d/%m/%Y")
-            dt_fim = datetime.strptime(partes[2].strip().split()[0], "%d/%m/%Y")
+            dt_ini = datetime.strptime(data_ini_str.strip().split()[0], "%d/%m/%Y")
+            dt_fim = datetime.strptime(data_fim_str.strip().split()[0], "%d/%m/%Y")
         except:
             continue
 
