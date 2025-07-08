@@ -4,6 +4,23 @@
 
 Unfortunately, the internal PTO management system does **not** provide a friendly or readable calendar view. As a workaround, each Team Leader maintains their own tracker spreadsheet to visualize absences more clearly.
 
+## 📁 Project Structure
+```
+.
+├── app.py
+├── .gitignore
+├── Procfile
+├── README.md
+├── requirements.txt
+├── config
+│   └── constants.py
+├── utils
+│   ├── auth.py
+│   ├── parser.py
+│   └── sheets.py
+```
+
+
 ## 📱 Fully Responsive Design
 
 The UI adapts beautifully across all screen sizes — from mobile to tablet and desktop — ensuring a seamless shopping experience for users on any device.
