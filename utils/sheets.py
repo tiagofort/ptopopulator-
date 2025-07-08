@@ -30,7 +30,7 @@ def preencher_planilha(dados_colados, sheet):
 
     for linha in dados:
         match = re.match(
-            r'^([A-Z]{1,6}~[^\t\s]+)[\s\t]+(\d{2}/\d{2}/\d{4} \d{1,2}:\d{2} [AP]M)[\s\t]+(\d{2}/\d{2}/\d{4} \d{1,2}:\d{2} [AP]M)',
+            r'^([A-Z]{1,6}~.+?)\s+(\d{2}/\d{2}/\d{4} \d{1,2}:\d{2} [AP]M)\s+(\d{2}/\d{2}/\d{4} \d{1,2}:\d{2} [AP]M)',
             linha.strip()
         )
         if not match:
