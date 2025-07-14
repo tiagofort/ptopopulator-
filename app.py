@@ -7,7 +7,7 @@ from utils.sheets import preencher_planilha
 
 st.set_page_config(page_title="PTO Populator", layout="centered")
 
-st.title("🗓️ Fill in Vacation/Absence in the Spreadsheet")
+st.title("🗓️ PTO POPULATOR")
 st.markdown("Paste the data below (starting with the name on the first line):")
 
 entrada = st.text_area("Data entry", height=300)
