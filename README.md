@@ -25,7 +25,7 @@ Unfortunately, the internal PTO management system does **not** provide a friendl
 
 The UI adapts beautifully across all screen sizes — from mobile to tablet and desktop — ensuring a seamless shopping experience for users on any device.
 
-![Responsive Test](https://imagens-tiago.s3.eu-north-1.amazonaws.com/resposive-pto.png)
+![Responsive Test](https://imagens-tiago.s3.eu-north-1.amazonaws.com/ptopopulator.png)
 
 ## 💡 The Problem
 
